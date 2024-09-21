@@ -33,7 +33,7 @@ For more details, refer to the paper: [Arachnophobia Exposure Therapy using EDPC
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/your_project.git
+   git clone https://github.com/athar70/EDPCGRL.git
    ```
    
 
@@ -53,9 +53,9 @@ For more details, refer to the paper: [Arachnophobia Exposure Therapy using EDPC
 
 Run the main script with the following command:
 
-    ```bash
-    python main.py --start_state <MIN|AVG|MAX> --target_stress <1-9> --method <Random|Greedy|GA|QLearning|DQN|PPO|A2C>
-    ```
+```bash
+python main.py --start_state <start_state> --target_stress <target_stress> --method <method>
+```
 
 ## Arguments
 
