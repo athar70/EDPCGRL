@@ -1,0 +1,42 @@
+{
+    "StartState": "MIN",
+    "ATTR": [
+        "LocoMotion",
+        "Motion",
+        "Closeness",
+        "Largeness",
+        "Hairiness",
+        "Color"
+    ],
+    "rangeATTR": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        3
+    ],
+    "Horizon": 100,
+    "MaxSTRESS": 10,
+    "TargetSTRESS": 3,
+    "Subjects_data_path": "./Data/Persons.csv",
+
+    "GA_params": {
+        "PopulationSize" : 10,
+        "MutationProbability": 0.1,
+        "CrossoverProbability": 0.8,
+        "PossibleActions": [-1, 1]
+    },
+
+    "QLearning_params": {
+        "gamma" : 0.8,
+        "alpha": 0.1,
+        "policy" : "epsilonGreedy", 
+        "epsilon" : 0.2, 
+        "initial_epsilon": 0.6,
+        "end_epsilon" : 0.1,
+        "MaxRollout" : 5,
+        "InitialTable" : "random"
+
+    }
+}
